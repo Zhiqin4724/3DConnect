@@ -1,8 +1,7 @@
-html{
-    overflow: hidden;
-}
+
 body{
     margin: 0;
+    overflow: hidden;
 }
 .container-app{
     width: 100%;
@@ -25,6 +24,16 @@ body{
 }
 .presentation-logo{
     position: absolute;
-    transform: translateZ(-3px) scale(4);
+    transform: translateZ(-2px) scale(3);
     z-index: -1;
+}
+
+@media (max-width: 1600px) {
+    /* Adjust the logo size for smaller screens or different zoom levels */
+    .presentation-logo {
+        transform: translateZ(-2px) scale(2);
+    }
+    body{
+        font-size: 24px;
+    }
 }

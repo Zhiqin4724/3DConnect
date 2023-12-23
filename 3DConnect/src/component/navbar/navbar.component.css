@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(36, 36, 36);
 }
 .navbar-seperation{
     width: 75%;
@@ -64,4 +64,10 @@
     font-size: 38px;
     cursor:pointer;
     font-weight: bold;
+}
+@media (max-width: 1400px) {
+  /* Adjust the logo size for smaller screens or different zoom levels */
+  .nav-title {
+      font-size: 28px;
+  }
 }

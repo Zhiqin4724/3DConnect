@@ -41,3 +41,10 @@
     line-height: 25px;
     letter-spacing: 2px;
 }
+
+@media (max-width: 1600px) {
+    /* Adjust the logo size for smaller screens or different zoom levels */
+    .presentation-text {
+        font-size: 18px;
+    }
+}
