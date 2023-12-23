@@ -1,0 +1,67 @@
+.nav-bar-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.navbar-seperation{
+    width: 75%;
+    height: 100px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 5% ;
+    padding-right: 5%;
+}
+.info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+    margin-left: 20%;
+}
+.nav-info{
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+.nav-info:hover {
+    color: white; /* Change the text color on hover */
+  }
+
+  /* Style the underline */
+  .nav-info::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the thickness of the underline as needed */
+    background-color: orange; /* Set the color of the underline */
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transform: scaleX(0); /* Initially, set the underline width to zero */
+    transition: transform 0.3s ease-out; /* Add a smooth transition effect for the underline */
+  }
+
+  /* Expand the underline on hover */
+  .nav-info:hover::after {
+    transform: scaleX(1); /* Expand the underline to full width on hover */
+    transform-origin: bottom left;
+  }
+.nav-title{
+    color: white;
+    font-size: 38px;
+    cursor:pointer;
+    font-weight: bold;
+}
