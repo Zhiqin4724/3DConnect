@@ -1,0 +1,46 @@
+.presentation-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1050px;
+    background: linear-gradient(45deg, #000000, #4e4e4e);
+    z-index: -2;
+}
+.presentation-title-container{
+    margin-left: 13%;
+    margin-top: 10%;
+    width: 70%;
+}
+.presentation-title{
+    text-decoration: none;
+    position: relative;
+    font-size: 90px;
+    display: inline-block;
+    color: white;
+    z-index: 3;
+
+}
+.presentation-title::after{
+    content: "";
+    position: absolute;
+    bottom: -40px; /* Adjust the distance of the underline from the text */
+    left: -10px;
+    width: 700px; /* Make the underline span the entire width of the container */
+    height: 4px; /* Adjust the thickness of the underline */
+    background-color: orange; 
+    z-index: 1;
+}
+
+.presentation-text{
+    color: white;
+    margin-top: 5%;
+    width: 90%;
+    height: 40%;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+.presentation-logo{
+    margin-right: 13%;
+    margin-top: 10%;
+}
