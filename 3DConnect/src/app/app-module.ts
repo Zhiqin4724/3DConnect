@@ -5,13 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './module/angular-material.module';
-import { AppComponent } from './app.component';
 import { AboutComponent } from '../component/about/about.component';
 import { ContactComponent } from '../component/contact/contact.component';
 import { NavbarComponent } from '../component/navbar/navbar.component';
 import { PresentationComponent } from '../component/presentation/presentation.component';
 import { TeamComponent } from '../component/team/team.component';
 import { AppRoutingModule } from './module/app-routing.module';
+import { RootComponent } from '../component/root/root.component';
 
 /**
  * Main module that is used in main.ts.
@@ -21,7 +21,7 @@ import { AppRoutingModule } from './module/app-routing.module';
  */
 @NgModule({
     declarations: [
-        AppComponent,
+        RootComponent,
         AboutComponent,
         ContactComponent,
         NavbarComponent,
@@ -38,6 +38,6 @@ import { AppRoutingModule } from './module/app-routing.module';
         ClipboardModule,
     ],
     providers: [],
-    bootstrap: [AppComponent],
+    bootstrap: [RootComponent],
 })
 export class AppModule {}

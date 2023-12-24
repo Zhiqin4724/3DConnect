@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.container-app{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #000000, #4e4e4e);
+    transform-style: preserve-3d;
+    perspective: 1px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.app-parallax{
+    width: 100%;
+    height: 90%;
+    margin-left: 80%;
+    margin-top: 10%;
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: -1;
+}
+.presentation-logo{
+    position: absolute;
+    transform: translateZ(-2px) scale(3);
+    z-index: -1;
+}
+
+@media (max-width: 1600px) {
+    /* Adjust the logo size for smaller screens or different zoom levels */
+    .presentation-logo {
+        transform: translateZ(-2px) scale(2);
+    }
+    body{
+        font-size: 24px;
+    }
+}
